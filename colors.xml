@@ -1,0 +1,73 @@
+<theme>
+    <!-- GLOBAL FALLBACKS (File names only) -->
+    <variables>
+        <systemLayerPath>systemlistlayer.png</systemLayerPath>
+        <bgImageFile>testbg.png</bgImageFile>
+        <frameImagePath>fram1.png</frameImagePath>
+        <underpath>black.png</underpath>		
+        <detailfont>./core/fonts/zrnic rg.otf</detailfont>
+        <detailfont2>./core/fonts/btseps2.TTF</detailfont2>
+        <dif-fontsize>0.0595</dif-fontsize>
+        <soundFolder>./core/sounds/</soundFolder>
+    </variables>
+
+    <colorScheme name="PS2">
+        <variables>
+            <backgroundColor>404040</backgroundColor>
+            <systemCarouselColor>747474D8</systemCarouselColor>
+            <systemCarouselTextColor>F0F0F0</systemCarouselTextColor>
+            <systemGameCounterColor>C6C6C6</systemGameCounterColor>
+            <systemGameCounterBackgroundColor>4c94ff</systemGameCounterBackgroundColor>
+            <systemInfoTextColor>B6B6B6</systemInfoTextColor>
+            <systemHelpColor>A6A6A6</systemHelpColor>
+            <systemHelpColorDimmed>969696</systemHelpColorDimmed>
+            <gamelistBackFrameColor>6F6F6F</gamelistBackFrameColor>
+            <gamelistTextlistSelectorColor>161616</gamelistTextlistSelectorColor>
+            <gamelistTextlistSelectedColor>fffe52</gamelistTextlistSelectedColor>
+            <gamelistTextlistPrimaryColor>c5c5c5</gamelistTextlistPrimaryColor>
+            <gamelistTextlistSecondaryColor>333333</gamelistTextlistSecondaryColor>
+            <gamelistCustomCollectionsHeaderColor>C6C6C6</gamelistCustomCollectionsHeaderColor>
+            <gamelistDefaultTextColor>000000</gamelistDefaultTextColor>
+            <gamelistInfoColor>303030</gamelistInfoColor>
+            <gamelistRatingColor>606060</gamelistRatingColor>
+            <gamelistHelpColor>A6A6A6</gamelistHelpColor>
+            <gamelistHelpColorDimmed>969696</gamelistHelpColorDimmed>
+        </variables>
+    </colorScheme>
+	
+    <colorScheme name="XBOX">
+        <variables>            
+            <!-- Overrides for XBOX (File names only) -->
+            <systemLayerPath>systemlistlayer2.png</systemLayerPath>
+            <bgImageFile>testbg2.png</bgImageFile>
+            <frameImagePath>fram2.png</frameImagePath>
+            <underpath>black2.png</underpath>
+            <detailfont>./core/fonts/XBOX_T.TTF</detailfont>
+            <detailfont2>./core/fonts/XboxOriginalBold-YzPYy.ttf</detailfont2>
+            <dif-fontsize>0.0225</dif-fontsize>
+            <soundFolder>./core/soundsxbox/</soundFolder>
+
+            <!-- Colors needed to prevent crashing -->
+            <backgroundColor>404040</backgroundColor>
+            <systemCarouselColor>747474D8</systemCarouselColor>
+            <systemCarouselTextColor>F0F0F0</systemCarouselTextColor>
+            <systemGameCounterColor>4c94ff6</systemGameCounterColor>
+            <systemGameCounterBackgroundColor>555555D8</systemGameCounterBackgroundColor>
+            <systemInfoTextColor>B6B6B6</systemInfoTextColor>
+            <systemHelpColor>A6A6A6</systemHelpColor>
+            <systemHelpColorDimmed>969696</systemHelpColorDimmed>
+            <gamelistBackFrameColor>6F6F6F</gamelistBackFrameColor>
+            <gamelistTextlistSelectorColor>161616</gamelistTextlistSelectorColor>
+            <gamelistTextlistSelectedColor>e0e0e0</gamelistTextlistSelectedColor>
+            <gamelistTextlistPrimaryColor>565656</gamelistTextlistPrimaryColor>
+            <gamelistTextlistSecondaryColor>333333</gamelistTextlistSecondaryColor>
+            <gamelistCustomCollectionsHeaderColor>C6C6C6</gamelistCustomCollectionsHeaderColor>
+            <gamelistDefaultTextColor>000000</gamelistDefaultTextColor>
+            <gamelistInfoColor>303030</gamelistInfoColor>
+            <gamelistRatingColor>606060</gamelistRatingColor>
+            <gamelistHelpColor>A6A6A6</gamelistHelpColor>
+            <gamelistHelpColorDimmed>969696</gamelistHelpColorDimmed>
+        </variables>
+    </colorScheme>
+
+</theme>

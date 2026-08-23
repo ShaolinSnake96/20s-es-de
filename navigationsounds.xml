@@ -1,0 +1,27 @@
+<theme>
+
+
+    <view name="all">
+        <sound name="systembrowse">
+            <path>${soundFolder}systembrowse.wav</path>
+        </sound>
+        <sound name="quicksysselect">
+            <path>${soundFolder}quicksysselect.wav</path>
+        </sound>
+        <sound name="select">
+            <path>${soundFolder}select.wav</path>
+        </sound>
+        <sound name="back">
+            <path>${soundFolder}back.wav</path>
+        </sound>
+        <sound name="scroll">
+            <path>${soundFolder}scroll.wav</path>
+        </sound>
+        <sound name="favorite">
+            <path>${soundFolder}favorite.wav</path>
+        </sound>
+        <sound name="launch">
+            <path>${soundFolder}launch.wav</path>
+        </sound>
+    </view>
+</theme>

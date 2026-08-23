@@ -1,0 +1,11 @@
+<!--
+    Theme engine examples for EmulationStation Desktop Edition (theme-engine-examples-es-de)
+    License: Creative Commons CC-BY-NC-SA
+-->
+
+<theme>
+    <variant name="variant01">
+        <include>./variant_01.xml</include>
+    </variant>
+
+</theme>
