@@ -1,5 +1,5 @@
 <!--
-    Variant 01 - Multi Aspect Ratio
+    Game Text List
 -->
 
 <theme>
@@ -31,7 +31,7 @@
         <view name="system">
             <carousel name="systemCarousel">
                 <pos>0.5 0.29</pos>
-                <size>1 0.232407</size>
+                <size>0.78 0.232407</size>
                 <type>horizontal</type>
                 <staticImage>./system/logos/${system.theme}.png</staticImage>
                 <maxItemCount>1</maxItemCount>
@@ -68,6 +68,7 @@
                 <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
+				<entries>start,b,a</entries>
             </helpsystem>
         </view>
         <view name="gamelist">
@@ -93,6 +94,7 @@
                 <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
+				<entries>start,b,a</entries>
             </helpsystem>   
         </view>
         
@@ -117,6 +119,7 @@
                 <rotation>0</rotation>
                 <origin>0.5 0.5</origin>
                 <path>./system/controllers/${system.theme}.svg</path>
+				<zIndex>70</zIndex>
             </image>
             <text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10">
                 <size>0.44 0.03</size>
@@ -166,7 +169,8 @@
             <image name="gamelistframe">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
-                <path>./backgrounds/${frameImagePath}</path>          
+                <path>./backgrounds/${frameImagePath}</path>
+				<interpolation>linear</interpolation>
                 <zIndex>10</zIndex>
             </image>  
             <image name="marquee">
@@ -260,7 +264,7 @@
         <view name="system">
             <carousel name="systemCarousel">
                 <pos>0.5 0.35</pos>
-                <size>1 0.232407</size>
+                <size>0.82 0.232407</size>
                 <type>horizontal</type>
                 <staticImage>./system/logos/${system.theme}.png</staticImage>
                 <maxItemCount>1</maxItemCount>
@@ -296,6 +300,7 @@
                 <iconColor>${systemHelpColor}</iconColor>
                 <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>
         </view>
@@ -316,11 +321,12 @@
                 <collectionIndicators>symbols</collectionIndicators>
             </textlist>
             <helpsystem name="help">
-                <pos>0.012 0.955</pos>
+                <pos>0.66 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
                 <iconColor>${gamelistHelpColor}</iconColor>
                 <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
+				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>   
         </view>
@@ -346,6 +352,7 @@
                 <rotation>0</rotation>
                 <origin>0.5 0.5</origin>
                 <path>./system/controllers/${system.theme}.svg</path>
+				<zIndex>70</zIndex>
             </image>
             <text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10">
                 <size>0.44 0.03</size>
@@ -395,7 +402,8 @@
             <image name="gamelistframe">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
-                <path>./backgrounds16x9/${frameImagePath}</path>          
+                <path>./backgrounds16x9/${frameImagePath}</path>  
+				<interpolation>linear</interpolation>
                 <zIndex>10</zIndex>
             </image>  
             <image name="marquee">
@@ -488,8 +496,8 @@
         </view>
         <view name="system">
             <carousel name="systemCarousel">
-                <pos>0.5 0.35</pos>
-                <size>1 0.232407</size>
+                <pos>0.5 0.31</pos>
+                <size>0.75 0.232407</size>
                 <type>horizontal</type>
                 <staticImage>./system/logos/${system.theme}.png</staticImage>
                 <maxItemCount>1</maxItemCount>
@@ -507,7 +515,7 @@
                 <lineSpacing>1.2</lineSpacing>
             </carousel>
             <text name="gameCounter">
-                <pos>0.5 0.27</pos>
+                <pos>0.5 0.24</pos>
                 <size>1 0.056</size>
                 <origin>0.5 0.5</origin>
                 <systemdata>gamecountGames</systemdata>
@@ -520,18 +528,19 @@
                 <zIndex>50</zIndex>
             </text>
             <helpsystem name="help">
-                <pos>0.012 0.955</pos>
+                <pos>0.52 0.955</pos>
                 <textColor>${systemHelpColor}</textColor>
                 <iconColor>${systemHelpColor}</iconColor>
                 <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
+				<entries>start,b,a</entries>
             </helpsystem>
         </view>
         <view name="gamelist">
             <textlist name="gamelistTextlist">
-                <pos>0.08 0.273</pos>
-                <size>0.26 0.5</size>
+                <pos>0.08 0.246</pos>
+                <size>0.26 0.42</size>
                 <selectorColor>00000000</selectorColor>
                 <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
@@ -545,11 +554,12 @@
                 <collectionIndicators>symbols</collectionIndicators>
             </textlist>
             <helpsystem name="help">
-                <pos>0.012 0.955</pos>
+                <pos>0.52 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
                 <iconColor>${gamelistHelpColor}</iconColor>
                 <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
+				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>   
         </view>
@@ -624,7 +634,8 @@
             <image name="gamelistframe">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
-                <path>./backgrounds16x9/${frameImagePath}</path>          
+                <path>./backgrounds16x9/${frameImagePath}</path>
+                <interpolation>linear</interpolation>				
                 <zIndex>10</zIndex>
             </image>  
             <image name="marquee">
@@ -643,8 +654,8 @@
             </image>
             
             <text name="description">
-                <pos>0.05 0.82</pos>
-                <size>0.346 0.147</size>
+                <pos>0.05 0.72</pos>
+                <size>0.346 0.187</size>
                 <container>true</container>
                 <containerVerticalSnap>true</containerVerticalSnap>
                 <containerScrollSpeed>1</containerScrollSpeed>
@@ -718,7 +729,7 @@
         <view name="system">
             <carousel name="systemCarousel">
                 <pos>0.5 0.35</pos>
-                <size>1 0.232407</size>
+                <size>0.72 0.232407</size>
                 <type>horizontal</type>
                 <staticImage>./system/logos/${system.theme}.png</staticImage>
                 <maxItemCount>1</maxItemCount>
@@ -749,18 +760,19 @@
                 <zIndex>50</zIndex>
             </text>
             <helpsystem name="help">
-                <pos>0.012 0.955</pos>
+                <pos>0.8 0.955</pos>
                 <textColor>${systemHelpColor}</textColor>
                 <iconColor>${systemHelpColor}</iconColor>
                 <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>
         </view>
         <view name="gamelist">
             <textlist name="gamelistTextlist">
-                <pos>0.08 0.273</pos>
-                <size>0.26 0.5</size>
+                <pos>0.08 0.223</pos>
+                <size>0.26 0.57</size>
                 <selectorColor>00000000</selectorColor>
                 <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
@@ -774,11 +786,12 @@
                 <collectionIndicators>symbols</collectionIndicators>
             </textlist>
             <helpsystem name="help">
-                <pos>0.012 0.955</pos>
+                <pos>0.7 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
                 <iconColor>${gamelistHelpColor}</iconColor>
                 <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
+				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>   
         </view>
@@ -853,7 +866,8 @@
             <image name="gamelistframe">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
-                <path>./backgroundsphone/${frameImagePath}</path>          
+                <path>./backgroundsphone/${frameImagePath}</path>
+                <interpolation>linear</interpolation>				
                 <zIndex>10</zIndex>
             </image>  
             <image name="marquee">

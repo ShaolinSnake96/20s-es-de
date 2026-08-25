@@ -76,7 +76,7 @@
     </suppressTransitionProfiles>
 
     <variant name="variant01">
-        <label>4-3</label>
+        <label>Game Textlist</label>
         <selectable>true</selectable>
     </variant>
 
