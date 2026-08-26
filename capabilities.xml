@@ -18,6 +18,10 @@
 	<colorScheme name="XBOX">
         <label>XBOX</label>
     </colorScheme>	
+	
+	<colorScheme name="GAMECUBE">
+        <label>Gamecube</label>
+    </colorScheme>
 
 
     <transitions name="slide">

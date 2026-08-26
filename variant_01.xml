@@ -44,7 +44,7 @@
                 <text>${system.fullName}</text>
                 <textColor>${systemCarouselTextColor}</textColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.055</fontSize>
+                <fontSize>0</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </carousel>
@@ -117,6 +117,8 @@
                 <maxSize>0.32 0.32</maxSize>
                 <opacity>0.3</opacity>
                 <rotation>0</rotation>
+				<opacity>1</opacity>
+				<color>${controllercolor}</color>
                 <origin>0.5 0.5</origin>
                 <path>./system/controllers/${system.theme}.svg</path>
 				<zIndex>70</zIndex>
@@ -208,7 +210,7 @@
                 <pos>0.815 0.3355</pos>
                 <text>Developer:</text>
                 <horizontalAlignment>center</horizontalAlignment>
-                <metadataElement>flase</metadataElement>
+                <metadataElement>false</metadataElement>
             </text>
             <text name="developer">
                 <pos>0.48 0.6855</pos>
@@ -224,7 +226,7 @@
                 <pos>0.15 0.3955</pos>
                 <text>Publisher:</text>
                 <horizontalAlignment>center</horizontalAlignment>
-                <metadataElement>true</metadataElement>
+                <metadataElement>false</metadataElement>
             </text>
             <text name="publisher">
                 <pos>0.48 0.74</pos>
@@ -241,7 +243,7 @@
                 <pos>0.635 0.614</pos>
                 <size>0 0.05</size>
                 <interpolation>nearest</interpolation>
-                <color>ffffff</color>
+                <color>${ratingcolor}</color>
                 <filledPath>./core/images/rating_filled.svg</filledPath>
                 <unfilledPath>./core/images/rating_empty.svg</unfilledPath>
                 <overlay>false</overlay>
@@ -277,7 +279,7 @@
                 <text>${system.fullName}</text>
                 <textColor>${systemCarouselTextColor}</textColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.025</fontSize>
+                <fontSize>0</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </carousel>
@@ -351,6 +353,8 @@
                 <opacity>0.3</opacity>
                 <rotation>0</rotation>
                 <origin>0.5 0.5</origin>
+				<opacity>1</opacity>
+				<color>${controllercolor}</color>
                 <path>./system/controllers/${system.theme}.svg</path>
 				<zIndex>70</zIndex>
             </image>
@@ -474,7 +478,7 @@
                 <pos>0.635 0.674</pos>
                 <size>0 0.05</size>
                 <interpolation>nearest</interpolation>
-                <color>ffffff</color>
+                <color>${ratingcolor}</color>
                 <filledPath>./core/images/rating_filled.svg</filledPath>
                 <unfilledPath>./core/images/rating_empty.svg</unfilledPath>
                 <overlay>false</overlay>
@@ -490,7 +494,7 @@
             <image name="background">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>./backgrounds16x9/${bgImageFile}</path>          
+                <path>./backgrounds16x10/${bgImageFile}</path>          
                 <zIndex>0</zIndex>
             </image>      
         </view>
@@ -510,7 +514,7 @@
                 <text>${system.fullName}</text>
                 <textColor>${systemCarouselTextColor}</textColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.025</fontSize>
+                <fontSize>0</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </carousel>
@@ -575,15 +579,18 @@
             <image name="systemlayer">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
-                <path>./backgrounds16x9/${systemLayerPath}</path>          
+                <path>./backgrounds16x10/${systemLayerPath}</path>          
                 <zIndex>9</zIndex>
             </image>
             <image name="controller">
                 <pos>0.5 0.78</pos>
                 <maxSize>0.32 0.32</maxSize>
-                <opacity>0.3</opacity>
+                <opacity>1</opacity>
+				<color>${controllercolor}</color>
                 <rotation>0</rotation>
                 <origin>0.5 0.5</origin>
+				<opacity>1</opacity>
+				<color>${controllercolor}</color>
                 <path>./system/controllers/${system.theme}.svg</path>
             </image>
             <text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10">
@@ -634,7 +641,7 @@
             <image name="gamelistframe">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
-                <path>./backgrounds16x9/${frameImagePath}</path>
+                <path>./backgrounds16x10/${frameImagePath}</path>
                 <interpolation>linear</interpolation>				
                 <zIndex>10</zIndex>
             </image>  
@@ -705,9 +712,9 @@
             <rating name="rating">
                 <pos>0.635 0.674</pos>
                 <size>0 0.05</size>
-                <interpolation>nearest</interpolation>
-                <color>ffffff</color>
+                <interpolation>nearest</interpolation>                
                 <filledPath>./core/images/rating_filled.svg</filledPath>
+				<color>${ratingcolor}</color>
                 <unfilledPath>./core/images/rating_empty.svg</unfilledPath>
                 <overlay>false</overlay>
             </rating>
@@ -742,7 +749,7 @@
                 <text>${system.fullName}</text>
                 <textColor>${systemCarouselTextColor}</textColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.025</fontSize>
+                <fontSize>0</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </carousel>
@@ -816,6 +823,8 @@
                 <opacity>0.3</opacity>
                 <rotation>0</rotation>
                 <origin>0.5 0.5</origin>
+				<opacity>1</opacity>
+				<color>${controllercolor}</color>
                 <path>./system/controllers/${system.theme}.svg</path>
             </image>
             <text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10">
@@ -938,7 +947,7 @@
                 <pos>0.635 0.674</pos>
                 <size>0 0.05</size>
                 <interpolation>nearest</interpolation>
-                <color>ffffff</color>
+                <color>${ratingcolor}</color>
                 <filledPath>./core/images/rating_filled.svg</filledPath>
                 <unfilledPath>./core/images/rating_empty.svg</unfilledPath>
                 <overlay>false</overlay>
