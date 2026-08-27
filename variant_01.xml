@@ -16,6 +16,7 @@
         <systemControllerImage>./${system.theme}/images/controller.svg</systemControllerImage>        
     </variables>
 	
+	
     <!-- ========================================== -->
     <!-- 4:3 RETRO LAYOUT                           -->
     <!-- ========================================== -->
@@ -26,7 +27,25 @@
                 <size>1 1</size>
                 <path>./backgrounds/${bgImageFile}</path>          
                 <zIndex>0</zIndex>
-            </image>      
+            </image> 
+     
+	 <clock name="clock">
+                <pos>0.57 0.02</pos>
+                <origin>1 0</origin>                              
+                <fontSize>0.034</fontSize>
+				<format>%H:%M</format>
+                <color>${gamelistdescColor}</color> 				
+            </clock>
+			
+            <systemstatus name="status">
+                <pos>0.5 0.02</pos>                
+                <origin>1 0</origin>				
+                <height>0.035</height>
+				<entrySpacing>0.005</entrySpacing>
+				<textRelativeScale>0.8</textRelativeScale>
+                <color>${gamelistdescColor}</color>
+            </systemstatus>
+	 
         </view>
         <view name="system">
             <carousel name="systemCarousel">
@@ -75,7 +94,7 @@
             <textlist name="gamelistTextlist">
                 <pos>0.073 0.201</pos>
                 <size>0.35 0.5</size>
-                <selectorColor>00000000</selectorColor>
+                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
                 <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
@@ -157,15 +176,18 @@
             </video>
 
             <badges name="badges">
-                <pos>00 00</pos>
-                <size>0 00</size>
+                <pos>0.762 0.62</pos>
+                <size>0.16 0.16</size>
+				<slots>favorite, completed</slots>
                 <origin>0.5 0.5</origin>
+				<zIndex>75</zIndex>
             </badges>
 
             <image name="logo">
                 <pos>0.29 0.07</pos>
                 <maxSize>0.1 0.13</maxSize>
                 <origin>1 1</origin>
+				<color>${gamelistsystemlogocolor}</color>
                 <path>./system/logos/${system.theme}.svg</path>
             </image>
             <image name="gamelistframe">
@@ -201,7 +223,7 @@
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
                 <fontSize>0.023</fontSize>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </text>
@@ -216,7 +238,7 @@
                 <pos>0.48 0.6855</pos>
                 <horizontalAlignment>center</horizontalAlignment>
                 <fontPath>${detailfont2}</fontPath>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.24</size>
                 <opacity>0.6</opacity>
@@ -230,7 +252,7 @@
             </text>
             <text name="publisher">
                 <pos>0.48 0.74</pos>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontPath>${detailfont2}</fontPath>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.04</size>
@@ -240,7 +262,7 @@
             </text>
             
             <rating name="rating">
-                <pos>0.635 0.614</pos>
+                <pos>0.635 0.674</pos>
                 <size>0 0.05</size>
                 <interpolation>nearest</interpolation>
                 <color>${ratingcolor}</color>
@@ -261,7 +283,25 @@
                 <size>1 1</size>
                 <path>./backgrounds16x9/${bgImageFile}</path>          
                 <zIndex>0</zIndex>
-            </image>      
+            </image>
+			
+			<clock name="clock">
+                <pos>0.2 0.02</pos>
+                <origin>1 0</origin>                              
+                <fontSize>0.034</fontSize>
+				<format>%H:%M</format>
+                <color>${gamelistdescColor}</color> 				
+            </clock>
+			
+            <systemstatus name="status">
+                <pos>0.14 0.02</pos>                
+                <origin>1 0</origin>				
+                <height>0.035</height>
+				<entrySpacing>0.005</entrySpacing>
+				<textRelativeScale>0.8</textRelativeScale>
+                <color>${gamelistdescColor}</color>
+            </systemstatus>
+       		
         </view>
         <view name="system">
             <carousel name="systemCarousel">
@@ -310,7 +350,7 @@
             <textlist name="gamelistTextlist">
                 <pos>0.08 0.273</pos>
                 <size>0.26 0.5</size>
-                <selectorColor>00000000</selectorColor>
+                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
                 <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
@@ -330,7 +370,8 @@
                 <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
 				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
-            </helpsystem>   
+            </helpsystem>  
+			
         </view>
         
         <view name="system">
@@ -392,15 +433,18 @@
             </video>
 
             <badges name="badges">
-                <pos>00 00</pos>
-                <size>0 00</size>
+                <pos>0.762 0.93</pos>
+                <size>0.16 0.16</size>
+				<slots>favorite, completed</slots>
                 <origin>0.5 0.5</origin>
+				<zIndex>75</zIndex>
             </badges>
 
             <image name="logo">
                 <pos>0.26 0.13</pos>
                 <maxSize>0.1 0.04</maxSize>
                 <origin>1 1</origin>
+				<color>${gamelistsystemlogocolor}</color>
                 <path>./system/logos/${system.theme}.svg</path>
             </image>
             <image name="gamelistframe">
@@ -436,7 +480,7 @@
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
                 <fontSize>0.017</fontSize>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </text>
@@ -451,7 +495,7 @@
                 <pos>0.458 0.6855</pos>
                 <horizontalAlignment>center</horizontalAlignment>
                 <fontPath>${detailfont2}</fontPath>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.24</size>
                 <opacity>0.6</opacity>
@@ -465,7 +509,7 @@
             </text>
             <text name="publisher">
                 <pos>0.458 0.74</pos>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontPath>${detailfont2}</fontPath>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.04</size>
@@ -496,7 +540,25 @@
                 <size>1 1</size>
                 <path>./backgrounds16x10/${bgImageFile}</path>          
                 <zIndex>0</zIndex>
-            </image>      
+            </image> 
+
+            <clock name="clock">
+                <pos>0.2 0.02</pos>
+                <origin>1 0</origin>                              
+                <fontSize>0.034</fontSize>
+				<format>%H:%M</format>
+                <color>${gamelistdescColor}</color> 				
+            </clock>
+			
+            <systemstatus name="status">
+                <pos>0.14 0.02</pos>                
+                <origin>1 0</origin>				
+                <height>0.035</height>
+				<entrySpacing>0.005</entrySpacing>
+				<textRelativeScale>0.8</textRelativeScale>
+                <color>${gamelistdescColor}</color>
+            </systemstatus>
+			
         </view>
         <view name="system">
             <carousel name="systemCarousel">
@@ -545,7 +607,7 @@
             <textlist name="gamelistTextlist">
                 <pos>0.08 0.246</pos>
                 <size>0.26 0.42</size>
-                <selectorColor>00000000</selectorColor>
+                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
                 <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
@@ -627,15 +689,18 @@
             </video>
 
             <badges name="badges">
-                <pos>00 00</pos>
-                <size>0 00</size>
+                <pos>0.762 0.7</pos>
+                <size>0.16 0.16</size>
+				<slots>favorite, completed</slots>
                 <origin>0.5 0.5</origin>
+				<zIndex>75</zIndex>
             </badges>
 
             <image name="logo">
-                <pos>0.26 0.13</pos>
+                <pos>0.26 0.11</pos>
                 <maxSize>0.1 0.04</maxSize>
                 <origin>1 1</origin>
+				<color>${gamelistsystemlogocolor}</color>
                 <path>./system/logos/${system.theme}.svg</path>
             </image>
             <image name="gamelistframe">
@@ -661,7 +726,7 @@
             </image>
             
             <text name="description">
-                <pos>0.05 0.72</pos>
+                <pos>0.05 0.75</pos>
                 <size>0.346 0.187</size>
                 <container>true</container>
                 <containerVerticalSnap>true</containerVerticalSnap>
@@ -671,7 +736,7 @@
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
                 <fontSize>0.017</fontSize>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </text>
@@ -686,7 +751,7 @@
                 <pos>0.458 0.6855</pos>
                 <horizontalAlignment>center</horizontalAlignment>
                 <fontPath>${detailfont2}</fontPath>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.24</size>
                 <opacity>0.6</opacity>
@@ -700,7 +765,7 @@
             </text>
             <text name="publisher">
                 <pos>0.458 0.74</pos>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontPath>${detailfont2}</fontPath>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.04</size>
@@ -731,7 +796,25 @@
                 <size>1 1</size>
                 <path>./backgroundsphone/${bgImageFile}</path>          
                 <zIndex>0</zIndex>
-            </image>      
+            </image> 
+
+            <clock name="clock">
+                <pos>0.147 0.02</pos>
+                <origin>1 0</origin>                              
+                <fontSize>0.034</fontSize>
+				<format>%H:%M</format>
+                <color>${gamelistdescColor}</color> 				
+            </clock>
+			
+            <systemstatus name="status">
+                <pos>0.11 0.02</pos>                
+                <origin>1 0</origin>				
+                <height>0.035</height>
+				<entrySpacing>0.005</entrySpacing>
+				<textRelativeScale>0.8</textRelativeScale>
+                <color>${gamelistdescColor}</color>
+            </systemstatus>
+			
         </view>
         <view name="system">
             <carousel name="systemCarousel">
@@ -780,7 +863,7 @@
             <textlist name="gamelistTextlist">
                 <pos>0.08 0.223</pos>
                 <size>0.26 0.57</size>
-                <selectorColor>00000000</selectorColor>
+                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
                 <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
@@ -861,15 +944,18 @@
             </video>
 
             <badges name="badges">
-                <pos>00 00</pos>
-                <size>0 00</size>
+                <pos>0.747 0.93</pos>
+                <size>0.16 0.16</size>
+				<slots>favorite, completed</slots>
                 <origin>0.5 0.5</origin>
+				<zIndex>75</zIndex>
             </badges>
 
             <image name="logo">
                 <pos>0.25 0.07</pos>
                 <maxSize>0.1 0.04</maxSize>
                 <origin>1 1</origin>
+				<color>${gamelistsystemlogocolor}</color>
                 <path>./system/logos/${system.theme}.svg</path>
             </image>
             <image name="gamelistframe">
@@ -905,7 +991,7 @@
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
                 <fontSize>0.027</fontSize>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
             </text>
@@ -920,7 +1006,7 @@
                 <pos>0.445 0.6855</pos>
                 <horizontalAlignment>center</horizontalAlignment>
                 <fontPath>${detailfont2}</fontPath>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.24</size>
                 <opacity>0.6</opacity>
@@ -934,7 +1020,7 @@
             </text>
             <text name="publisher">
                 <pos>0.445 0.74</pos>
-                <color>dcdcdc</color>
+                <color>${gamelistdescColor}</color>
                 <fontPath>${detailfont2}</fontPath>
                 <fontSize>${dif-fontsize}</fontSize>
                 <size>0.50 0.04</size>

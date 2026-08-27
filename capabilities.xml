@@ -22,6 +22,10 @@
 	<colorScheme name="GAMECUBE">
         <label>Gamecube</label>
     </colorScheme>
+	
+	<colorScheme name="DREAMCAST">
+        <label>Dreamcast</label>
+    </colorScheme>
 
 
     <transitions name="slide">
