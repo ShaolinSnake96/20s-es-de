@@ -16,6 +16,20 @@
         <systemControllerImage>./${system.theme}/images/controller.svg</systemControllerImage>        
     </variables>
 	
+	<fontSize name="small">
+        <variables>
+		    <gamelistsize>0.027</gamelistsize>
+            <descriptionsize>0.021</descriptionsize>
+        </variables>
+    </fontSize>
+	
+    <fontSize name="large">
+        <variables>
+		    <gamelistsize>0.030</gamelistsize>
+            <descriptionsize>0.027</descriptionsize>
+        </variables>
+    </fontSize>
+	
 	
     <!-- ========================================== -->
     <!-- 4:3 RETRO LAYOUT                           -->
@@ -99,7 +113,7 @@
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.029</fontSize>
+                <fontSize>${gamelistsize}</fontSize>
                 <horizontalAlignment>center</horizontalAlignment>
                 <horizontalMargin>0.01</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -222,7 +236,7 @@
                 <containerResetDelay>7</containerResetDelay>
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.023</fontSize>
+                <fontSize>${descriptionsize}</fontSize>
                 <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
@@ -355,7 +369,7 @@
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.023</fontSize>
+                <fontSize>${gamelistsize}</fontSize>
                 <horizontalAlignment>center</horizontalAlignment>
                 <horizontalMargin>0.01</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -479,7 +493,7 @@
                 <containerResetDelay>7</containerResetDelay>
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.017</fontSize>
+                <fontSize>${descriptionsize}</fontSize>
                 <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
@@ -612,7 +626,7 @@
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.023</fontSize>
+                <fontSize>${gamelistsize}</fontSize>
                 <horizontalAlignment>center</horizontalAlignment>
                 <horizontalMargin>0.01</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -735,7 +749,7 @@
                 <containerResetDelay>7</containerResetDelay>
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.017</fontSize>
+                <fontSize>${descriptionsize}</fontSize>
                 <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
@@ -868,7 +882,7 @@
                 <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
                 <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.021</fontSize>
+                <fontSize>${gamelistsize}</fontSize>
                 <horizontalAlignment>center</horizontalAlignment>
                 <horizontalMargin>0.01</horizontalMargin>
                 <letterCase>uppercase</letterCase>
@@ -990,7 +1004,7 @@
                 <containerResetDelay>7</containerResetDelay>
                 <metadata>description</metadata>
                 <fontPath>${detailfont}</fontPath>
-                <fontSize>0.027</fontSize>
+                <fontSize>${descriptionsize}</fontSize>
                 <color>${gamelistdescColor}</color>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>

@@ -1,4 +1,4 @@
-ShaolinSnake96 (helped by the community
+ShaolinSnake (helped by the community
 
-Thanks to Leon, Weestuarty, Ant and Rob Zombie for all the helps
+Thanks to Weestuarty and Rob Zombie for all the helps
 

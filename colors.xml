@@ -153,5 +153,47 @@
 			
         </variables>
     </colorScheme>
+	
+	<colorScheme name="WINDOWSXP">
+        <variables>            
+            <!-- Overrides for GAMECUBE (File names only) -->
+            <systemLayerPath>systemlistlayer5.png</systemLayerPath>
+            <bgImageFile>testbg5.png</bgImageFile>
+            <frameImagePath>fram5.png</frameImagePath>
+            <underpath>black.png</underpath>
+            <detailfont>./core/fonts/tahoma.ttf</detailfont>
+            <detailfont2>./core/fonts/framd.ttf</detailfont2>
+            <dif-fontsize>0.032</dif-fontsize>
+            <soundFolder>./core/soundsxp/</soundFolder>
+			<ratingcolor>ffffff</ratingcolor>
+			<controllercolor>ffffff</controllercolor>
+			<gamelistsystemlogocolor>ffffff</gamelistsystemlogocolor>
+
+            <!-- Colors needed to prevent crashing -->
+            <backgroundColor>404040</backgroundColor>
+            <systemCarouselColor>747474D8</systemCarouselColor>
+            <systemCarouselTextColor>ffffff</systemCarouselTextColor>
+            <systemGameCounterColor>000000</systemGameCounterColor>
+            <systemGameCounterBackgroundColor>000000</systemGameCounterBackgroundColor>
+            <systemInfoTextColor>B6B6B6</systemInfoTextColor>
+            <systemHelpColor>A6A6A6</systemHelpColor>
+            <systemHelpColorDimmed>969696</systemHelpColorDimmed>
+            <gamelistBackFrameColor>6F6F6F</gamelistBackFrameColor>
+            <gamelistTextlistSelectorColor>5078dd</gamelistTextlistSelectorColor>
+            <gamelistTextlistSelectedColor>ffffff</gamelistTextlistSelectedColor>
+            <gamelistTextlistPrimaryColor>121212</gamelistTextlistPrimaryColor>
+            <gamelistTextlistSecondaryColor>333333</gamelistTextlistSecondaryColor>
+            <gamelistCustomCollectionsHeaderColor>C6C6C6</gamelistCustomCollectionsHeaderColor>
+            <gamelistDefaultTextColor>000000</gamelistDefaultTextColor>
+            <gamelistInfoColor>303030</gamelistInfoColor>
+            <gamelistRatingColor>ffffff</gamelistRatingColor>
+            <gamelistHelpColor>A6A6A6</gamelistHelpColor>
+            <gamelistHelpColorDimmed>969696</gamelistHelpColorDimmed>
+			<gamelistdescColor>ffffff</gamelistdescColor>
+			
+        </variables>
+    </colorScheme>
+	
+
 
 </theme>

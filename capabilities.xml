@@ -4,12 +4,16 @@
 
 <themeCapabilities>
     <themeName>X20s</themeName>
-
    
     <aspectRatio>4:3</aspectRatio>
 	<aspectRatio>16:9</aspectRatio>
 	<aspectRatio>16:10</aspectRatio>
 	<aspectRatio>19.5:9</aspectRatio>
+	
+
+    <fontSize>small</fontSize>
+    <fontSize>large</fontSize>
+
 
     <colorScheme name="PS2">
         <label>Ps2</label>
@@ -26,7 +30,10 @@
 	<colorScheme name="DREAMCAST">
         <label>Dreamcast</label>
     </colorScheme>
-
+	
+	<colorScheme name="WINDOWSXP">
+        <label>WINDOWSXP</label>
+    </colorScheme>	
 
     <transitions name="slide">
         <label>slide</label>
