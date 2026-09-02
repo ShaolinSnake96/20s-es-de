@@ -91,7 +91,12 @@
     </suppressTransitionProfiles>
 
     <variant name="variant01">
-        <label>Game Textlist</label>
+        <label>Game Textlist (Marquee)</label>
+        <selectable>true</selectable>
+    </variant>
+	
+	<variant name="variant02">
+        <label>Game Textlist (Physical)</label>
         <selectable>true</selectable>
     </variant>
 

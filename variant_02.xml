@@ -1,4 +1,4 @@
-<!--
+f<!--
     Game Text List
 -->
 
@@ -199,7 +199,7 @@
 
             <image name="logo">
                 <pos>0.32 0.07</pos>
-                <maxSize>0.1 0.13</maxSize>
+                <maxSize>0.13 0.14</maxSize>
                 <origin>1 1</origin>
 				<color>${gamelistsystemlogocolor}</color>
                 <path>./system/logos/${system.theme}.svg</path>
@@ -211,12 +211,12 @@
 				<interpolation>linear</interpolation>
                 <zIndex>10</zIndex>
             </image>  
-            <image name="marquee">
+            <image name="physicalmedia">
                 <pos>0.44 0.49</pos>
                 <rotation>-16.4</rotation>
                 <maxSize>0.2 0.2</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>   
                 <zIndex>12</zIndex>
             </image>  
             <image name="blackscreen">
@@ -468,12 +468,12 @@
 				<interpolation>linear</interpolation>
                 <zIndex>10</zIndex>
             </image>  
-            <image name="marquee">
+            <image name="physicalmedia">
                 <pos>0.36 0.53</pos>
                 <rotation>-16.4</rotation>
                 <maxSize>0.14 0.14</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>   
                 <zIndex>12</zIndex>
             </image>  
             <image name="blackscreen">
@@ -724,12 +724,12 @@
                 <interpolation>linear</interpolation>				
                 <zIndex>10</zIndex>
             </image>  
-            <image name="marquee">
+            <image name="physicalmedia">
                 <pos>0.36 0.53</pos>
                 <rotation>-16.4</rotation>
                 <maxSize>0.14 0.14</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>   
                 <zIndex>12</zIndex>
             </image>  
             <image name="blackscreen">
@@ -979,12 +979,12 @@
                 <interpolation>linear</interpolation>				
                 <zIndex>10</zIndex>
             </image>  
-            <image name="marquee">
+            <image name="physicalmedia">
                 <pos>0.36 0.53</pos>
                 <rotation>-16.4</rotation>
                 <maxSize>0.14 0.14</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>   
                 <zIndex>12</zIndex>
             </image>  
             <image name="blackscreen">
