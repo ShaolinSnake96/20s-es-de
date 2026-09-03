@@ -96,30 +96,28 @@
             </text>
             <helpsystem name="help">
                 <pos>0.012 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
 				<entries>start,b,a</entries>
             </helpsystem>
         </view>
         <view name="gamelist">
-            <textlist name="gamelistTextlist">
-                <pos>0.073 0.201</pos>
-                <size>0.35 0.5</size>
-                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
-                <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
-                <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
-                <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
-                <fontPath>${detailfont}</fontPath>
-                <fontSize>${gamelistsize}</fontSize>
-                <horizontalAlignment>center</horizontalAlignment>
-                <horizontalMargin>0.01</horizontalMargin>
-                <letterCase>uppercase</letterCase>
-                <indicators>symbols</indicators>
-                <collectionIndicators>symbols</collectionIndicators>
-            </textlist>
+            <carousel name="gamelistTextlist">
+                <pos>0.1256 0.2</pos>
+                <size>0.26 0.49</size>
+				<itemSize>0.14 0.09</itemSize>
+				<itemScale>1</itemScale>
+                <type>vertical</type>
+				<imageType>marquee</imageType>
+				<maxItemCount>5</maxItemCount>		
+				<color>00000000</color>
+				<imageInterpolation>linear</imageInterpolation>
+				<itemHorizontalAlignment>center</itemHorizontalAlignment>
+				<zIndex>80</zIndex>
+            </carousel>			
             <helpsystem name="help">
                 <pos>0.012 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
@@ -190,16 +188,31 @@
             </video>
 
             <badges name="badges">
-                <pos>0.762 0.62</pos>
+                <pos>0.77 0.675</pos>
                 <size>0.16 0.16</size>
 				<slots>favorite, completed</slots>
                 <origin>0.5 0.5</origin>
 				<zIndex>75</zIndex>
             </badges>
 
+            <text name="gameName">
+                <pos>0.531 0.836</pos>
+                <size>0.4 0.047</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <fontPath>${detailfont2}</fontPath>
+                <color>${gamelistdescColor}</color>				
+                <fontSize>${dif-fontsize}</fontSize>				
+                <container>true</container>
+                <containerStartDelay>1.5</containerStartDelay>
+                <containerResetDelay>3</containerResetDelay>
+                <containerScrollSpeed>0.5</containerScrollSpeed>
+                <opacity>0.6</opacity>
+                <metadata>name</metadata>				
+            </text>
+
             <image name="logo">
-                <pos>0.29 0.07</pos>
-                <maxSize>0.1 0.13</maxSize>
+                <pos>0.317 0.07</pos>
+                <maxSize>0.13 0.13</maxSize>
                 <origin>1 1</origin>
 				<color>${gamelistsystemlogocolor}</color>
                 <path>./system/logos/${system.theme}.svg</path>
@@ -212,12 +225,12 @@
                 <zIndex>10</zIndex>
             </image>  
             <image name="marquee">
-                <pos>0.44 0.49</pos>
+                <pos>0.46 0.53</pos>
                 <rotation>-16.4</rotation>
-                <maxSize>0.2 0.2</maxSize>
+                <maxSize>0.14 0.14</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
-                <zIndex>12</zIndex>
+                <imageType>physicalmedia</imageType>    
+                <zIndex>12</zIndex>  
             </image>  
             <image name="blackscreen">
                 <pos>0 0</pos>
@@ -228,10 +241,10 @@
 
             <text name="description">
                 <pos>0.08 0.758</pos>
-                <size>0.346 0.147</size>
+                <size>0.357 0.167</size>
                 <container>true</container>
                 <containerVerticalSnap>true</containerVerticalSnap>
-                <containerScrollSpeed>1</containerScrollSpeed>
+                <containerScrollSpeed>0.7</containerScrollSpeed>
                 <containerStartDelay>1.5</containerStartDelay>
                 <containerResetDelay>7</containerResetDelay>
                 <metadata>description</metadata>
@@ -352,30 +365,28 @@
             </text>
             <helpsystem name="help">
                 <pos>0.012 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
 				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>
         </view>
         <view name="gamelist">
-            <textlist name="gamelistTextlist">
+            <carousel name="gamelistTextlist">
                 <pos>0.08 0.273</pos>
-                <size>0.26 0.5</size>
-                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
-                <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
-                <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
-                <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
-                <fontPath>${detailfont}</fontPath>
-                <fontSize>${gamelistsize}</fontSize>
-                <horizontalAlignment>center</horizontalAlignment>
-                <horizontalMargin>0.01</horizontalMargin>
-                <letterCase>uppercase</letterCase>
-                <indicators>symbols</indicators>
-                <collectionIndicators>symbols</collectionIndicators>
-            </textlist>
+                <size>0.26 0.49</size>
+				<itemSize>0.14 0.09</itemSize>
+				<itemScale>1</itemScale>
+                <type>vertical</type>
+				<imageType>marquee</imageType>
+				<maxItemCount>5</maxItemCount>		
+				<color>00000000</color>
+				<imageInterpolation>linear</imageInterpolation>
+				<itemHorizontalAlignment>center</itemHorizontalAlignment>
+				<zIndex>80</zIndex>
+            </carousel>			
             <helpsystem name="help">
                 <pos>0.66 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
@@ -453,6 +464,21 @@
                 <origin>0.5 0.5</origin>
 				<zIndex>75</zIndex>
             </badges>
+			
+			<text name="gameName">
+                <pos>0.509 0.825</pos>
+                <size>0.4 0.047</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <fontPath>${detailfont2}</fontPath>
+                <color>${gamelistdescColor}</color>				
+                <fontSize>${dif-fontsize}</fontSize>				
+                <container>true</container>
+                <containerStartDelay>1.5</containerStartDelay>
+                <containerResetDelay>3</containerResetDelay>
+                <containerScrollSpeed>0.5</containerScrollSpeed>
+                <opacity>0.6</opacity>
+                <metadata>name</metadata>				
+            </text>
 
             <image name="logo">
                 <pos>0.26 0.13</pos>
@@ -473,7 +499,7 @@
                 <rotation>-16.4</rotation>
                 <maxSize>0.14 0.14</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>    
                 <zIndex>12</zIndex>
             </image>  
             <image name="blackscreen">
@@ -609,30 +635,29 @@
             </text>
             <helpsystem name="help">
                 <pos>0.52 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
                 <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
                 <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
 				<entries>start,b,a</entries>
             </helpsystem>
         </view>
+
         <view name="gamelist">
-            <textlist name="gamelistTextlist">
-                <pos>0.08 0.246</pos>
-                <size>0.26 0.42</size>
-                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
-                <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
-                <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
-                <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
-                <fontPath>${detailfont}</fontPath>
-                <fontSize>${gamelistsize}</fontSize>
-                <horizontalAlignment>center</horizontalAlignment>
-                <horizontalMargin>0.01</horizontalMargin>
-                <letterCase>uppercase</letterCase>
-                <indicators>symbols</indicators>
-                <collectionIndicators>symbols</collectionIndicators>
-            </textlist>
+            <carousel name="gamelistTextlist">
+                <pos>0.1 0.234</pos>
+                <size>0.22 0.44</size>
+				<itemSize>0.11 0.07</itemSize>
+				<itemScale>1</itemScale>
+                <type>vertical</type>
+				<imageType>marquee</imageType>
+				<maxItemCount>5</maxItemCount>		
+				<color>00000000</color>
+				<imageInterpolation>linear</imageInterpolation>
+				<itemHorizontalAlignment>center</itemHorizontalAlignment>
+				<zIndex>80</zIndex>
+            </carousel>		
             <helpsystem name="help">
                 <pos>0.52 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
@@ -710,6 +735,21 @@
 				<zIndex>75</zIndex>
             </badges>
 
+            <text name="gameName">
+                <pos>0.509 0.832</pos>
+                <size>0.4 0.047</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <fontPath>${detailfont2}</fontPath>
+                <color>${gamelistdescColor}</color>				
+                <fontSize>${dif-fontsize}</fontSize>				
+                <container>true</container>
+                <containerStartDelay>1.5</containerStartDelay>
+                <containerResetDelay>3</containerResetDelay>
+                <containerScrollSpeed>0.5</containerScrollSpeed>
+                <opacity>0.6</opacity>
+                <metadata>name</metadata>				
+            </text>
+
             <image name="logo">
                 <pos>0.26 0.11</pos>
                 <maxSize>0.1 0.04</maxSize>
@@ -729,9 +769,9 @@
                 <rotation>-16.4</rotation>
                 <maxSize>0.14 0.14</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>    
                 <zIndex>12</zIndex>
-            </image>  
+            </image>    
             <image name="blackscreen">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>
@@ -865,30 +905,28 @@
             </text>
             <helpsystem name="help">
                 <pos>0.8 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
 				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>
         </view>
         <view name="gamelist">
-            <textlist name="gamelistTextlist">
-                <pos>0.0836 0.239</pos>
-                <size>0.26 0.57</size>
-                <selectorColor>${gamelistTextlistSelectorColor}</selectorColor>
-                <selectedColor>${gamelistTextlistSelectedColor}</selectedColor>
-                <primaryColor>${gamelistTextlistPrimaryColor}</primaryColor>
-                <secondaryColor>${gamelistTextlistSecondaryColor}</secondaryColor>
-                <fontPath>${detailfont}</fontPath>
-                <fontSize>${gamelistsize}</fontSize>
-                <horizontalAlignment>center</horizontalAlignment>
-                <horizontalMargin>0.01</horizontalMargin>
-                <letterCase>uppercase</letterCase>
-                <indicators>symbols</indicators>
-                <collectionIndicators>symbols</collectionIndicators>
-            </textlist>
+            <carousel name="gamelistTextlist">
+                <pos>0.1 0.234</pos>
+                <size>0.22 0.57</size>
+				<itemSize>0.14 0.1</itemSize>
+				<itemScale>1</itemScale>
+                <type>vertical</type>
+				<imageType>marquee</imageType>
+				<maxItemCount>5</maxItemCount>		
+				<color>00000000</color>
+				<imageInterpolation>linear</imageInterpolation>
+				<itemHorizontalAlignment>center</itemHorizontalAlignment>
+				<zIndex>80</zIndex>
+            </carousel>	
             <helpsystem name="help">
                 <pos>0.7 0.955</pos>
                 <textColor>${gamelistHelpColor}</textColor>
@@ -958,12 +996,27 @@
             </video>
 
             <badges name="badges">
-                <pos>0.747 0.93</pos>
+                <pos>0.747 1</pos>
                 <size>0.16 0.16</size>
 				<slots>favorite, completed</slots>
                 <origin>0.5 0.5</origin>
 				<zIndex>75</zIndex>
             </badges>
+
+            <text name="gameName">
+                <pos>0.4955 0.8345</pos>
+                <size>0.4 0.047</size>
+                <horizontalAlignment>center</horizontalAlignment>
+                <fontPath>${detailfont2}</fontPath>
+                <color>${gamelistdescColor}</color>				
+                <fontSize>${dif-fontsize}</fontSize>				
+                <container>true</container>
+                <containerStartDelay>1.5</containerStartDelay>
+                <containerResetDelay>3</containerResetDelay>
+                <containerScrollSpeed>0.5</containerScrollSpeed>
+                <opacity>0.6</opacity>
+                <metadata>name</metadata>				
+            </text>
 
             <image name="logo">
                 <pos>0.25 0.07</pos>
@@ -982,11 +1035,11 @@
             <image name="marquee">
                 <pos>0.36 0.53</pos>
                 <rotation>-16.4</rotation>
-                <maxSize>0.14 0.14</maxSize>
+                <maxSize>0.19 0.19</maxSize>
                 <origin>0 0.5</origin>
-                <imageType>marquee</imageType>   
+                <imageType>physicalmedia</imageType>    
                 <zIndex>12</zIndex>
-            </image>  
+            </image>    
             <image name="blackscreen">
                 <pos>0 0</pos>
                 <maxSize>1 1</maxSize>

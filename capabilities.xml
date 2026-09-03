@@ -99,5 +99,10 @@
         <label>Game Textlist (Physical)</label>
         <selectable>true</selectable>
     </variant>
+	
+	<variant name="variant03">
+        <label>Game Caroussel)</label>
+        <selectable>true</selectable>
+    </variant>
 
 </themeCapabilities>
