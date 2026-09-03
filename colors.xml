@@ -51,6 +51,11 @@
             <detailfont2>./core/fonts/XboxOriginalBold-YzPYy.ttf</detailfont2>
             <dif-fontsize>0.0225</dif-fontsize>
             <soundFolder>./core/soundsxbox/</soundFolder>
+			<controllercolor>dcfc0f</controllercolor>
+			<gamelistsystemlogocolor>46e300</gamelistsystemlogocolor>
+			<gamelistdescColor>dcfc0f</gamelistdescColor>
+			<gamelistHelpColor>46e300</gamelistHelpColor>
+			<gamelistHelpColorDimmed>46e300</gamelistHelpColorDimmed>
 
             <!-- Colors needed to prevent crashing -->
             <backgroundColor>404040</backgroundColor>
@@ -63,11 +68,11 @@
             <systemHelpColorDimmed>969696</systemHelpColorDimmed>
             <gamelistBackFrameColor>6F6F6F</gamelistBackFrameColor>
             <gamelistTextlistSelectorColor>00000000</gamelistTextlistSelectorColor>
-            <gamelistTextlistSelectedColor>e0e0e0</gamelistTextlistSelectedColor>
-            <gamelistTextlistPrimaryColor>565656</gamelistTextlistPrimaryColor>
+            <gamelistTextlistSelectedColor>dcfc0f</gamelistTextlistSelectedColor>
+            <gamelistTextlistPrimaryColor>216a00</gamelistTextlistPrimaryColor>
             <gamelistTextlistSecondaryColor>333333</gamelistTextlistSecondaryColor>
             <gamelistCustomCollectionsHeaderColor>C6C6C6</gamelistCustomCollectionsHeaderColor>
-            <gamelistDefaultTextColor>000000</gamelistDefaultTextColor>
+            <gamelistDefaultTextColor>216a00</gamelistDefaultTextColor>
             <gamelistInfoColor>303030</gamelistInfoColor>
             <gamelistRatingColor>606060</gamelistRatingColor>
             <gamelistHelpColor>A6A6A6</gamelistHelpColor>

@@ -96,10 +96,10 @@
             </text>
             <helpsystem name="help">
                 <pos>0.012 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
 				<entries>start,b,a</entries>
             </helpsystem>
@@ -352,10 +352,10 @@
             </text>
             <helpsystem name="help">
                 <pos>0.012 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
 				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>
@@ -609,10 +609,10 @@
             </text>
             <helpsystem name="help">
                 <pos>0.52 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${ganelistHelpColorDimmed}</iconColorDimmed>
                 <fontSize>0.034</fontSize>
 				<entries>start,b,a</entries>
             </helpsystem>
@@ -865,10 +865,10 @@
             </text>
             <helpsystem name="help">
                 <pos>0.8 0.955</pos>
-                <textColor>${systemHelpColor}</textColor>
-                <iconColor>${systemHelpColor}</iconColor>
-                <textColorDimmed>${systemHelpColorDimmed}</textColorDimmed>
-                <iconColorDimmed>${systemHelpColorDimmed}</iconColorDimmed>
+                <textColor>${gamelistHelpColor}</textColor>
+                <iconColor>${gamelistHelpColor}</iconColor>
+                <textColorDimmed>${gamelistHelpColorDimmed}</textColorDimmed>
+                <iconColorDimmed>${gamelistHelpColorDimmed}</iconColorDimmed>
 				<entries>start,b,a</entries>
                 <fontSize>0.034</fontSize>
             </helpsystem>
